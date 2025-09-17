@@ -1,0 +1,1 @@
+pip install pyrogram telethon python-dotenv redis
