@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Telegram Userbot Manager</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Telegram Userbot Manager</h1>
+    <div class="card">
+      <label>API Key (will be stored in localStorage):</label>
+      <input id="apiKey" type="password" placeholder="API Key" />
+      <button id="saveKey">Save Key</button>
+    </div>
+
+    <div class="card">
+      <h2>Sessions</h2>
+      <div>
+        <input id="sessionName" placeholder="name (e.g. alice)" />
+        <input id="sessionString" placeholder="StringSession" />
+        <button id="addSession">Add Session</button>
+      </div>
+      <ul id="sessionsList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Create Supergroup (single)</h2>
+      <select id="sessionSelect"></select>
+      <input id="groupTitle" placeholder="Group title" />
+      <input id="groupAbout" placeholder="About (optional)" />
+      <button id="createGroup">Create Group</button>
+      <pre id="createResult"></pre>
+    </div>
+
+    <div class="card">
+      <h2>Bulk Create (one title per line)</h2>
+      <select id="bulkSession"></select>
+      <textarea id="bulkTitles" rows="6" placeholder="Title 1\nTitle 2"></textarea>
+      <button id="bulkCreate">Create All</button>
+      <pre id="bulkResult"></pre>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
