@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+telethon==1.27.0
+python-dotenv
+cryptography
+requests
